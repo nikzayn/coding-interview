@@ -65,8 +65,8 @@ class Permutation{
 
 
     public static void main(String[] args){
-        char[] str1 = ("Geeky").toCharArray();
-        char[] str2 = ("bitch").toCharArray();
+        char[] str1 = ("geeky").toCharArray();
+        char[] str2 = ("eekyg").toCharArray();
 
         if(isPermutation(str1, str2)){
             System.out.println("Strings are in permutation");
