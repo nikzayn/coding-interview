@@ -1,7 +1,8 @@
-import java.util.*;
+import java.io.*;
 
 class SortedMerge{
-    public static int SortAB(int[] a, int[] b, int lastA, int lastB){
+    static int NA =-1;
+    static void SortAB(int[] a, int[] b, int lastA, int lastB){
         int indexA = lastA - 1;
         int indexB = lastB - 1;
         int mergedIndex = lastA + lastB - 1;
@@ -21,5 +22,21 @@ class SortedMerge{
         }
     }
 
-    pub
+    static void printArray(int arr[], int n)  
+    { 
+        System.out.println ( "Array A after merging B in sorted order : " ) ; 
+        for (int i = 0; i < n; i++) 
+            System.out.print(arr[i] +" "); 
+    } 
+
+    public static void main(String[] args){
+        int a[] = {10, 20, 14, 44, 22, NA, NA, NA, NA, NA};
+        int lastA = 5;
+        int size = 10;
+        
+        int b[] = {15, 16, 17, 19, 20};
+        int lastB = 5;
+        SortAB(a, b, lastA, lastB);
+        printArray(a, size);
+    }
 }
